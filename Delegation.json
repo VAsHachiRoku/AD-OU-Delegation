@@ -1,0 +1,57 @@
+{
+    "OrganizationUnits": [
+        {
+            "DN": "OU=APAC,OU=UsersAccounts,DC=lab,DC=com",
+            "Code": "APAC"
+        },
+        {
+            "DN": "OU=EMEA,OU=UsersAccounts,DC=lab,DC=com",
+            "Code": "EMEA"
+        }
+    ],
+    "Groups": [
+        {
+            "UsersSAM": [
+                "-A-Users",
+                "-S-Users",
+                "-P-Users"
+                ],
+            "GroupsSAM": [
+                "-A-Groups",
+                "-S-Groups"
+            ],
+            "ComputersSAM": [
+                "-A-Computers",
+                "-L-Computers"
+            ]
+        }
+    ],
+    "Delegations": [
+        {
+            "UserAllow": [
+                "givenName",
+                "initials"
+            ],
+            "UserSecurity": [
+                "sAMAccountName",
+                "employeeNumber"
+            ],
+            "UserPassword": [
+                "Change Password",
+                "Reset Password"
+            ],
+            "GroupAllow": [
+                "name",
+                "description"
+            ],
+            "GroupSecurity": [
+                "managedBy",
+                "member"
+            ],
+            "ComputerAllow": [
+                "name",
+                "member"
+            ]
+        }
+    ]
+}
